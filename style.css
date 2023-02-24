@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background-color: #333;
+    height: 100vh;
+    color: #fff;
+}
+
+section {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#spring {
+    background-image: url(media/spring.jpg);
+}
+
+#summer {
+    background-image: url(media/summer.jpg);
+}
+
+#autumn {
+    background-image: url(media/autumn.jpg);
+}
+
+#winter {
+    background-image: url(media/winter.jpg);
+}
