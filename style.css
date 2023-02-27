@@ -6,15 +6,19 @@
     box-sizing: border-box;
 }
 
-html {
+:root {
     font-family: Ubuntu, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 header {
     background-color: #333;
     height: 100vh;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 section {
@@ -38,4 +42,86 @@ section {
 
 #winter {
     background-image: url(media/winter.jpg);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #999;
+    margin-top: 4rem;
+}
+
+footer {
+    background-color: #111;
+    padding: 4rem;
+}
+
+/* descendent selector */
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    margin: 1rem;
+}
+
+footer img {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    transition: all 0.3s;
+}
+
+
+footer a:hover img {
+    transform: scale(1.3);
+}
+
+#orbit {
+    height: 300px;
+    width: 300px;
+    border: 1px solid #555;
+    position: relative;
+    border-radius: 50%;
+    animation: spin 24s linear infinite;
+}
+
+#sun {
+    height: 60px;
+    width: 60px;
+    background-color: #FC0;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    border-radius: 50%;
+}
+
+#earth {
+    width: 28px;
+    height: 28px;
+    background-color: #00BAFF;
+    position: absolute;
+    left: 16px;
+    top: 164px;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+#moon {
+    width: 12px;
+    height: 12px;
+    background-color: #999;
+    position: absolute;
+    left: 8px;
+    top: -28px;
+    border-radius: 50%;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
 }
